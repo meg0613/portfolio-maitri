@@ -1,0 +1,157 @@
+/* ================= BASE ================= */
+
+body.about-page{
+  background:#f6f6f4;
+  color:#111;
+  font-family:'Cormorant Garamond', serif;
+}
+
+
+/* ================= ABOUT LAYOUT ================= */
+
+.about-container{
+  max-width:1200px;
+  margin:160px auto;
+  padding:0 40px;
+}
+
+.about-grid{
+  display:grid;
+  grid-template-columns:420px 1fr;
+  gap:100px;
+  align-items:center;
+}
+
+
+/* ================= IMAGE ================= */
+
+.about-image{
+  position:relative;
+}
+
+.about-image img{
+  width:100%;
+  height:520px;
+  object-fit:cover;
+  border-radius:14px;
+
+  /* subtle premium shadow */
+  box-shadow:0 20px 60px rgba(0,0,0,0.08);
+}
+
+
+/* ================= TEXT ================= */
+
+.about-text{
+  max-width:600px;
+}
+
+/* MAIN TITLE */
+.about-text h1{
+  font-size:48px;
+  line-height:1.2;
+  margin-bottom:36px;
+  letter-spacing:-0.5px;
+}
+
+/* LEAD */
+.about-text .lead{
+  font-size:22px;
+  line-height:1.7;
+  margin-bottom:30px;
+  opacity:0.85;
+}
+
+/* BODY TEXT */
+.about-text p{
+  font-size:18px;
+  line-height:1.9;
+  margin-bottom:24px;
+  color:#222;
+  opacity:0.9;
+}
+
+
+/* ================= SUBTLE DETAIL LINE ================= */
+
+.about-text::before{
+  content:"";
+  display:block;
+  width:60px;
+  height:1px;
+  background:#111;
+  opacity:0.2;
+  margin-bottom:30px;
+}
+
+
+/* ================= FOOTER ================= */
+
+.project-footer{
+  margin-top:140px;
+  padding:80px 0;
+  text-align:center;
+}
+
+/* BUTTON */
+.back-home-btn{
+  text-decoration:none;
+  font-size:13px;
+  letter-spacing:0.25em;
+  text-transform:uppercase;
+  color:#111;
+  position:relative;
+  display:inline-block;
+}
+
+/* UNDERLINE ANIMATION */
+.back-home-btn::after{
+  content:"";
+  position:absolute;
+  left:0;
+  bottom:-6px;
+  width:0%;
+  height:1px;
+  background:#111;
+  transition:0.4s ease;
+}
+
+.back-home-btn:hover::after{
+  width:100%;
+}
+
+
+/* ================= REMOVE CURSOR ================= */
+
+.custom-cursor{
+  display:none !important;
+}
+
+
+/* ================= RESPONSIVE ================= */
+
+@media(max-width:900px){
+
+  .about-grid{
+    grid-template-columns:1fr;
+    gap:50px;
+  }
+
+  .about-container{
+    margin:120px auto;
+    padding:0 24px;
+  }
+
+  .about-image img{
+    height:auto;
+  }
+
+  .about-text h1{
+    font-size:36px;
+  }
+
+  .about-text .lead{
+    font-size:20px;
+  }
+
+}

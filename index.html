@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Creative Developer Portfolio</title>
+
+<meta name="description" content="Creative developer portfolio showcasing interactive design, branding, and modern web experiences.">
+
+<link rel="stylesheet" href="style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<!-- GSAP -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
+<!-- Smooth Scroll -->
+<script src="https://unpkg.com/@studio-freight/lenis"></script>
+
+</head>
+
+<body>
+
+<!-- PAGE TRANSITION -->
+<div class="page-transition"></div>
+
+<!-- CUSTOM CURSOR -->
+<div class="custom-cursor"></div>
+
+<!-- CURSOR IMAGE PREVIEW -->
+<div class="cursor-preview"></div>
+
+<!-- HEADER -->
+<header class="site-header">
+
+<div class="header-left">
+<a href="#">
+<img src="Logo.png" alt="Studio Logo" class="logo-img" id="site-logo">
+</a>
+</div>
+
+<div class="site-name">
+MAITRI TRIVEDI
+</div>
+
+<div class="header-actions">
+
+<!-- THEME TOGGLE (ICON VERSION) -->
+<button class="theme-toggle" id="theme-toggle">☾</button>
+<button class="menu-toggle">☰</button>
+
+</div>
+
+</header>
+
+<!-- MENU -->
+<div class="menu-overlay">
+<nav class="menu-nav">
+<a href="work/project1.html">Work</a>
+<a href="/about.html">About</a>
+<a href="#contact">Contact</a>
+</nav>
+</div>
+
+<main>
+
+<!-- HERO -->
+<section class="hero">
+
+  <div class="hero-inner">
+
+    <p class="hero-intro">
+      Hello, I am a communication designer.
+    </p>
+
+    <h1 class="hero-title">
+      I design brand identities  
+      that bring people  
+      together.
+    </h1>
+
+    <p class="hero-subtext">
+      I find art in mundane things and beauty in shared languages.  
+      Based in Vadodara, India — working everywhere.  
+      Let’s create something meaningful.
+    </p>
+
+  </div>
+
+</section>
+
+<!-- WORK -->
+<section id="work" class="work section">
+
+<div class="section-header">
+  <h2>Selected Work</h2>
+  <p class="subtitle">
+    A curated selection of branding, editorial and spatial design work.
+  </p>
+</div>
+
+<!-- FEATURED (KEEP MELABODY) -->
+<section class="featured-project">
+
+  <a href="work/project1.html" class="featured-link magnetic">
+
+    <div class="featured-image">
+      <img src="images/project1/hero.png" alt="Melabody">
+    </div>
+
+    <div class="featured-info">
+      <span class="featured-label">Featured Project</span>
+      <h2>Melabody</h2>
+      <p>
+        Barrier-first skincare branding focused on melanin-rich skin.
+      </p>
+    </div>
+
+  </a>
+
+</section>
+
+<!-- PROJECT GRID -->
+<div class="projects">
+
+  <!-- LOAFFA -->
+  <a class="project magnetic" href="work/project2.html">
+    <img src="images/project2/2026-03-22 16.34.05.jpg">
+    <div class="project-info">
+      <h3>Loaffa</h3>
+      <span>Luxury Bedding Branding</span>
+    </div>
+  </a>
+
+  <!-- UNCLE DOUGH -->
+  <a class="project magnetic" href="work/project3.html">
+    <img src="images/project3/social media posts-02.png">
+    <div class="project-info">
+      <h3>Uncle Dough</h3>
+      <span>Bakery Identity</span>
+    </div>
+  </a>
+
+  <!-- DHINA DHIN DHA -->
+  <a class="project magnetic" href="work/project4.html">
+    <img src="images/project4/1.png">
+    <div class="project-info">
+      <h3>Dhina Dhin Dha</h3>
+      <span>Editorial Design</span>
+    </div>
+  </a>
+
+  <!-- ASTITVA BHARAT -->
+  <a class="project magnetic" href="work/project5.html">
+    <img src="images/project5/2026-03-22 16.37.49.jpg">
+    <div class="project-info">
+      <h3>Astitva Bharat</h3>
+      <span>Exhibition Identity</span>
+    </div>
+  </a>
+
+</div>
+
+</section>
+
+<!-- CONTACT -->
+<!-- SPACER (important for overlay feel) -->
+<div class="contact-spacer"></div>
+
+<!-- CONTACT OVERLAY SECTION -->
+<section class="contact-dark">
+
+  <div class="contact-dark-inner">
+
+    <h2 class="contact-dark-title">
+      Curious about what we can create together?<br>
+    </h2>
+
+    <div class="contact-dark-cta">
+
+      <a href="mailto:designsbymaitri@gmail.com" class="contact-btn">
+        Get in Touch
+      </a>
+
+      <div class="contact-status">
+        <span class="dot"></span>
+        Available for work
+      </div>
+
+    </div>
+
+    <div class="contact-footer">
+
+      <div class="contact-left">
+        <p>designsbymaitri@gmail.com</p>
+      </div>
+
+      <div class="contact-right">
+        <a href="https://www.linkedin.com/in/maitri-trivedi-1b9882292/">LinkedIn</a>
+        <a href="https://www.instagram.com/designbymaitri/?hl=en">Instagram</a>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+</main>
+
+<footer class="site-footer">
+<p>© 2026 Maitri Trivedi Portfolio</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>

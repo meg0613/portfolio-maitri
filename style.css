@@ -114,34 +114,37 @@ body.dark .menu-overlay{
 }
 
 /* INTRO (SHIFTED RIGHT SLIGHTLY) */
+/* INTRO (slightly stronger but still subtle) */
 .hero-intro{
-  font-size:18px;
-  opacity:.55;
-  margin-bottom:30px;
+  font-size:clamp(22px, 2.2vw, 26px);
+  opacity:.6;
+  margin-bottom:34px;
 
-  text-align:right;
-  max-width:400px;
+  text-align:center;
+  max-width:500px;
   margin-left:auto;
+  margin-right:auto;
 }
 
-/* MAIN TITLE */
+/* MAIN TITLE (dominant) */
 .hero-title{
-  font-size:clamp(60px,7vw,110px);
+  font-size:clamp(64px, 7vw, 110px);
   line-height:1.05;
   letter-spacing:-1.5px;
 
   text-align:center;
-  margin-bottom:50px;
+  margin-bottom:48px;
 }
 
-/* SUBTEXT (SHIFTED LEFT — CREATES BALANCE) */
+/* SUBTEXT (balanced, readable, not weak) */
 .hero-subtext{
-  font-size:20px;
+  font-size:clamp(20px, 2vw, 24px);
   line-height:1.8;
-  opacity:.65;
+  opacity:.7;
 
-  max-width:600px;
-  text-align:left;
+  max-width:650px;
+  margin:0 auto;
+  text-align:center;
 }
 
 /* ================= WORK ================= */

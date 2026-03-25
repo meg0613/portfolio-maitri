@@ -26,198 +26,225 @@
   line-height:1;
 }
 
-.project-melabody{
-  background:#f6f6f4;
-  color:#1a1a1a;
-  font-family:'Cormorant Garamond', serif;
-}
+/* ===============================
+   MELABODY — CLEAN PORTFOLIO STYLE
+   =============================== */
 
-/* ---------------- CONTAINER ---------------- */
-
-.project-melabody .container{
-  width:min(1000px, 92%);
-  margin:0 auto;
-  text-align:center;
-}
-
-/* ---------------- HERO ---------------- */
-
-.project-melabody .project-hero{
-  height:80vh;
-  overflow:hidden;
-}
-
-.project-melabody .project-hero img{
-  width:100%;
-  height:100%;
-  object-fit:cover;
-  display:block;
-}
-
-/* ---------------- INTRO ---------------- */
-
-.project-melabody .project-intro{
-  margin:120px auto;
-  display:flex;
-  flex-direction:column;
-  align-items:center;
-  gap:30px;
-}
-
-.project-melabody .intro-left h1{
-  font-size:clamp(52px,6vw,72px);
-  font-weight:500;
-}
-
-.project-melabody .project-tags{
-  display:flex;
-  flex-wrap:wrap;
-  justify-content:center;
-  gap:10px;
-}
-
-.project-melabody .project-tags span{
-  font-size:13px;
-  padding:7px 16px;
-  background:#ecebe8;
-  border-radius:20px;
-}
-
-.project-melabody .intro-right p{
-  font-size:18px;
-  line-height:1.9;
-  max-width:720px;
-  margin:0 auto;
-}
-
-/* ---------------- MOODBOARD ---------------- */
-
-.project-melabody .melabody-grid{
-  height:auto;
-  display:flex;
-  justify-content:center;
-  margin:120px auto;
-}
-
-.project-melabody .melabody-grid img{
-  width:min(700px, 90%);
-  display:block;
-  border-radius:14px;
-  box-shadow:0 10px 30px rgba(0,0,0,0.08);
-}
-
-/* ---------------- FEATURE IMAGE ---------------- */
-
-.project-melabody .project-image{
-  margin:120px auto;
-  display:flex;
-  justify-content:center;
-}
-
-.project-melabody .project-image img{
-  width:min(900px, 92%);
-  display:block;
-  border-radius:14px;
-  box-shadow:0 10px 30px rgba(0,0,0,0.08);
-}
-
-/* ---------------- TEXT ---------------- */
-
-.project-melabody .project-text{
-  margin:120px auto;
-  max-width:720px;
-  text-align:center;
-}
-
-.project-melabody .project-text h2{
-  font-size:34px;
-  margin-bottom:20px;
-}
-
-.project-melabody .project-text p{
-  font-size:18px;
-  line-height:1.9;
-}
-
-/* ---------------- GALLERY (FIXED GRID) ---------------- */
-
-.project-melabody .melabody-gallery{
-  width:min(1000px, 92%);
-  margin:120px auto;
-
-  display:grid;
-  grid-template-columns:repeat(2, 1fr);
-  gap:22px;
-}
-
-/* base image */
-.project-melabody .melabody-gallery img{
-  width:100%;
-  height:260px;
-  object-fit:cover;
-  display:block;
-
-  border-radius:14px;
-  box-shadow:0 10px 30px rgba(0,0,0,0.08);
-}
-
-/* layout control */
-
-.project-melabody .melabody-gallery img:nth-child(3){
-  grid-column:span 2;
-  height:320px;
-}
-
-.project-melabody .melabody-gallery img:nth-child(4),
-.project-melabody .melabody-gallery img:nth-child(5){
-  height:300px;
-}
-
-/* ---------------- NAV (BUTTON STYLE) ---------------- */
-
-.project-navigation{
-  display:flex;
-  justify-content:center;
-  gap:30px;
-  margin:120px auto;
-}
-
-.nav-project{
-  padding:12px 26px;
-  border-radius:30px;
-  background:#1a1a1a;
-  color:#fff;
-  text-decoration:none;
-  font-size:14px;
-  transition:0.3s ease;
-}
-
-.nav-project:hover{
-  background:#333;
-}
-
-.nav-project span{
-  display:block;
-  font-size:12px;
-  opacity:.7;
-}
-
-.nav-project h3{
-  font-size:15px;
+.project-melabody {
+  background: #f6f6f4;
+  color: #111;
+  font-family: 'Cormorant Garamond', serif;
 }
 
 
+/* ===============================
+   HERO (FULL, NO CROP ISSUES)
+   =============================== */
 
-/* ---------------- RESPONSIVE ---------------- */
+.project-melabody .project-hero img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
 
-@media(max-width:768px){
 
-  .project-melabody .melabody-gallery{
-    grid-template-columns:1fr;
+/* ===============================
+   INTRO
+   =============================== */
+
+.project-melabody .project-intro {
+  display: flex;
+  justify-content: space-between;
+  gap: 80px;
+  padding: 120px 8%;
+}
+
+.project-melabody .intro-left h1 {
+  font-size: 60px;
+  margin-bottom: 20px;
+}
+
+.project-melabody .intro-right {
+  max-width: 520px;
+  line-height: 1.8;
+  opacity: 0.75;
+}
+
+
+/* ===============================
+   TAGS (TABLET STYLE)
+   =============================== */
+
+.project-melabody .project-tags {
+  margin-top: 20px;
+}
+
+.project-melabody .project-tags span {
+  display: inline-block;
+  padding: 8px 16px;
+  margin: 6px 8px 0 0;
+  font-size: 13px;
+  border-radius: 999px;
+  background: #e8e8e5;
+  color: #333;
+  font-weight: 500;
+}
+
+
+/* ===============================
+   MOODBOARD (FULL IMAGE — NO CUT)
+   =============================== */
+
+.project-melabody .melabody-grid {
+  width: 100%;
+  padding: 0 8%;
+  margin: 140px 0;
+}
+
+.project-melabody .melabody-grid img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 12px;
+}
+
+
+/* ===============================
+   ALL IMAGES (NO CROPPING EVER)
+   =============================== */
+
+.project-melabody .project-image {
+  width: 100%;
+  padding: 0 8%;
+  margin: 140px 0;
+}
+
+.project-melabody .project-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 12px;
+}
+
+
+/* ===============================
+   TEXT
+   =============================== */
+
+.project-melabody .project-text {
+  max-width: 720px;
+  margin: 140px auto;
+  line-height: 1.8;
+  padding: 0 8%;
+}
+
+.project-melabody .project-text h2 {
+  font-size: 34px;
+  margin-bottom: 16px;
+}
+
+
+/* ===============================
+   GALLERY (NO OVERLAP, CLEAN GRID)
+   =============================== */
+
+.melabody-product {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  padding: 0 8%;
+  margin: 140px 0;
+}
+
+.melabody-product img {
+  width: 100%;
+  border-radius: 12px;
+}
+
+.melabody-lifestyle {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  padding: 0 8%;
+  margin: 140px 0;
+}
+
+.melabody-lifestyle img {
+  width: 100%;
+  border-radius: 12px;
+}
+
+.melabody-system {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 40px;
+  padding: 0 8%;
+  margin: 160px 0;
+}
+
+.melabody-system img {
+  width: 100%;
+  border-radius: 12px;
+}
+
+.melabody-highlight {
+  width: 100%;
+  padding: 0 8%;
+  margin: 160px 0;
+}
+
+.melabody-highlight img {
+  width: 100%;
+  border-radius: 12px;
+}
+
+.melabody-feature img,
+.melabody-product img,
+.melabody-lifestyle img,
+.melabody-system img,
+.melabody-highlight img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+
+/* ===============================
+   NAVIGATION
+   =============================== */
+
+.project-melabody .project-navigation {
+  display: flex;
+  justify-content: space-between;
+  padding: 120px 8%;
+}
+
+
+/* ===============================
+   CONTACT SPACING
+   =============================== */
+
+.project-melabody .contact-spacer {
+  height: 120px;
+}
+
+
+/* ===============================
+   RESPONSIVE
+   =============================== */
+
+@media (max-width: 900px) {
+
+  .project-melabody .project-intro {
+    flex-direction: column;
   }
 
-  .project-melabody .melabody-gallery img{
-    height:auto;
+  .project-melabody .melabody-gallery {
+    grid-template-columns: 1fr;
+  }
+
+  .project-melabody .melabody-gallery img {
+    grid-column: span 1 !important;
   }
 
 }
@@ -226,240 +253,198 @@
 /* LOAFFA FIXED */
 /* ================================================= */
 
-.project-loaffa{
-  background:#daeff9;
-  color:#1a1a1a;
-  font-family:'Cormorant Garamond', serif;
+/* ===============================
+   LOAFFA — PREMIUM CLEAN LAYOUT
+   =============================== */
+
+.project-loaffa {
+  background: #f6f6f4;
+  color: #111;
+  font-family: 'Cormorant Garamond', serif;
 }
 
-/* ---------------- CONTAINER ---------------- */
 
-.project-loaffa .container{
-  width:min(1000px, 92%);
-  margin:0 auto;
-  text-align:center;
+/* ===============================
+   HERO (FULL BLEED)
+   =============================== */
+
+.project-loaffa .project-hero img {
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
-/* ---------------- HERO ---------------- */
 
-.project-loaffa .project-hero{
-  height:80vh;
-  overflow:hidden;
+/* ===============================
+   INTRO (CONTAINED)
+   =============================== */
+
+.project-loaffa .project-intro {
+  display: flex;
+  justify-content: space-between;
+  gap: 80px;
+  padding: 120px 8%;
 }
 
-.project-loaffa .project-hero img{
-  width:100%;
-  height:100%;
-  object-fit:cover;
-  display:block;
+.project-loaffa .intro-left h1 {
+  font-size: 120px;
+  margin-bottom: 20px;
 }
 
-/* ---------------- INTRO ---------------- */
-
-.project-loaffa .project-intro{
-  margin:120px auto;
-  display:flex;
-  flex-direction:column;
-  align-items:center;
-  gap:30px;
+.project-loaffa .intro-right {
+  font-size: 25px;
+  max-width: 520px;
+  line-height: 1.8;
+  opacity: 0.75;
 }
 
-.project-loaffa .intro-left h1{
-  font-size:clamp(60px,8vw,72px);
-  font-weight:500;
+
+/* ===============================
+   TAGS (TABLET STYLE)
+   =============================== */
+
+.project-loaffa .project-tags span {
+  display: inline-block;
+  padding: 8px 16px;
+  margin: 6px 8px 0 0;
+  font-size: 13px;
+  border-radius: 999px;
+  background: #e8e8e5;
 }
 
-.project-loaffa .project-tags{
-  display:flex;
-  flex-wrap:wrap;
-  justify-content:center;
-  gap:10px;
+
+/* ===============================
+   IMAGE ROW (FULL WIDTH GRID)
+   =============================== */
+
+.project-loaffa .loaffa-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+
+  width: 100%;
+  padding: 0;
+  margin: 140px 0;
 }
 
-.project-loaffa .project-tags span{
-  font-size:13px;
-  padding:7px 16px;
-  background:#f1efe9;
-  border-radius:20px;
+.project-loaffa .loaffa-row img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 10px;
 }
 
-.project-loaffa .intro-right p{
-  font-size:28px;
-  line-height:1.9;
-  max-width:720px;
-  margin:0 auto;
+
+/* ===============================
+   SINGLE IMAGE (PORTRAIT FEATURE)
+   =============================== */
+
+.project-loaffa .loaffa-single {
+  width: 100%;
+  margin: 140px 0;
 }
 
-/* ---------------- ROW (2 IMAGES) ---------------- */
-
-.project-loaffa .loaffa-row{
-  display:flex;
-  justify-content:center;
-  gap:24px;
-  margin:120px auto;
+.project-loaffa .loaffa-single img {
+  width: 55%;        /* smaller = elegant */
+  margin: 0 auto;
+  display: block;
+  border-radius: 12px;
 }
 
-.project-loaffa .loaffa-row img{
-  width:48%;
-  height:260px;
-  object-fit:cover;
-  display:block;
 
-  border-radius:14px;
-  box-shadow:0 10px 30px rgba(0,0,0,0.08);
+/* ===============================
+   FULL WIDTH IMAGES
+   =============================== */
+
+.project-loaffa .project-image {
+  width: 100%;
+  margin: 140px 0;
+  padding: 0;
 }
 
-/* ---------------- PORTRAIT ---------------- */
-
-.project-loaffa .loaffa-single{
-  display:flex;
-  justify-content:center;
-  margin:100px 0;
+.project-loaffa .project-image img {
+  width: 100%;
+  display: block;
 }
 
-.project-loaffa .loaffa-single img{
-  width:320px;
-  display:block;
 
-  border-radius:14px;
-  box-shadow:0 10px 30px rgba(0,0,0,0.08);
+/* ===============================
+   TEXT
+   =============================== */
+
+.project-loaffa .project-text {
+  font-size: x-large;
+  max-width: 720px;
+  margin: 140px auto;
+  padding: 0 8%;
+  line-height: 1.8;
 }
 
-/* ---------------- FEATURE IMAGE ---------------- */
-
-.project-loaffa .project-image{
-  margin:120px auto;
-  display:flex;
-  justify-content:center;
+.project-loaffa .project-text h2 {
+  font-size: 100px;
+  margin-bottom: 16px;
 }
 
-.project-loaffa .project-image img{
-  width:min(900px, 92%);
-  display:block;
 
-  border-radius:14px;
-  box-shadow:0 10px 30px rgba(0,0,0,0.08);
+/* ===============================
+   VIDEO (CLEAN + PREMIUM)
+   =============================== */
+
+.project-loaffa .project-video {
+  width: 100%;
+  margin: 160px 0;
 }
 
-/* ---------------- TEXT ---------------- */
-
-.project-loaffa .project-text{
-  margin:120px auto;
-  max-width:720px;
-  text-align:center;
+.project-loaffa .project-video-frame {
+  width: 100%;
+  overflow: hidden;
 }
 
-.project-loaffa .project-text h2{
-  font-size:36px;
-  margin-bottom:20px;
+.project-loaffa .project-video video {
+  width: 100%;
+  display: block;
 }
 
-.project-loaffa .project-text p{
-  font-size:24px;
-  line-height:1.9;
+
+/* ===============================
+   NAV
+   =============================== */
+
+.project-loaffa .project-navigation {
+  display: flex;
+  justify-content: space-between;
+  padding: 120px 8%;
+  font-size: larger;
 }
 
-/* ---------------- VIDEO ---------------- */
 
-.project-loaffa .project-video{
-  margin:120px auto;
-  display:flex;
-  justify-content:center;
-}
+/* ===============================
+   RESPONSIVE
+   =============================== */
 
-.project-loaffa .project-video-frame{
-  width:min(900px, 92%);
-  overflow:hidden;
-  border-radius:14px;
-  box-shadow:0 10px 30px rgba(0,0,0,0.08);
-}
+@media (max-width: 900px) {
 
-.project-loaffa video{
-  width:100%;
-  display:block;
-}
-
-/* ---------------- NAV (BUTTON STYLE) ---------------- */
-
-/* ================= NAV (UNIFIED LIKE MELABODY) ================= */
-
-.project-navigation{
-  display:flex;
-  justify-content:center;
-  align-items:center;
-  gap:40px;
-  margin:140px auto;
-}
-
-/* BUTTON */
-
-.nav-project{
-  display:inline-flex;
-  flex-direction:column;
-  align-items:flex-start;
-  justify-content:center;
-
-  padding:20px 32px;
-  min-width:280px;
-
-  background:#111;
-  color:#fff;
-  text-decoration:none;
-
-  border-radius:999px;
-
-  transition:0.3s ease;
-}
-
-/* TOP LABEL */
-
-.nav-project span{
-  font-size:14px;
-  opacity:.7;
-  margin-bottom:6px;
-}
-
-/* TITLE */
-
-.nav-project h3{
-  font-size:20px;
-  font-weight:500;
-  line-height:1.3;
-}
-
-/* HOVER */
-
-.nav-project:hover{
-  transform:translateY(-4px);
-  box-shadow:0 20px 40px rgba(0,0,0,0.15);
-}
-
-/* ---------------- FOOTER ---------------- */
-
-.project-footer{
-  display:flex;
-  justify-content:center;
-  gap:20px;
-  padding:80px 0;
-}
-
-/* ---------------- RESPONSIVE ---------------- */
-
-@media(max-width:768px){
-
-  .project-loaffa .loaffa-row{
-    flex-direction:column;
+  .project-loaffa .project-intro {
+    flex-direction: column;
   }
 
-  .project-loaffa .loaffa-row img{
-    width:100%;
-    height:auto;
+  .project-loaffa .loaffa-row {
+    grid-template-columns: 1fr;
   }
 
-  .project-loaffa .loaffa-single img{
-    width:100%;
+  .project-loaffa .loaffa-single img {
+    width: 100%;
   }
+}
 
+/* ===============================
+   LOAFFA — TRUE IMAGE SIZING
+   =============================== */
+
+.project-loaffa img {
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
 /* ================================================= */
@@ -548,9 +533,23 @@
 
 /* ---------------- NARROW IMAGE ---------------- */
 
-.project-image.narrow{
-  max-width:600px;
-  margin:120px auto;
+/* ===============================
+   UNCLE DOUGH — MENU LAYOUT
+   =============================== */
+
+.uncledough-menu {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: start;
+  padding: 0 8%;
+  margin: 80px 0;
+}
+
+.uncledough-menu img {
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
 /* ---------------- GALLERY ---------------- */
@@ -669,7 +668,7 @@
 /* ---------------- CONTAINER ---------------- */
 
 .project-dhinadhindha .container{
-  width:min(1000px, 92%);
+  width:min(1200px, 94%);
   margin:0 auto;
   text-align:center;
 }
@@ -743,7 +742,7 @@
 
 .project-dhinadhindha .project-gallery img{
   width:100%;
-  height:260px;
+  height:540px;
   object-fit:cover;
   display:block;
 
@@ -759,8 +758,8 @@
 
 .project-dhinadhindha .project-image.full-bleed img{
   width:100%;
-  max-width:1100px;
-  display:block;
+  max-width:1300px;
+  display:flex;
   margin:0 auto;
 
   border-radius:16px;
@@ -776,7 +775,7 @@
 }
 
 .project-dhinadhindha .project-image img{
-  width:min(900px, 92%);
+  width:min(1100px, 94%);
   display:block;
 
   border-radius:16px;
@@ -852,7 +851,7 @@
 }
 
 /* ================================================= */
-/* ASTITVA BHARAT FIXED */
+/* ASTITVA BHARAT — PREMIUM FULL SIZE */
 /* ================================================= */
 
 .project-astitva{
@@ -864,7 +863,7 @@
 /* ---------------- CONTAINER ---------------- */
 
 .project-astitva .container{
-  width:min(1000px, 92%);
+  width:min(1250px, 95%);
   margin:0 auto;
   text-align:center;
 }
@@ -872,7 +871,7 @@
 /* ---------------- HERO ---------------- */
 
 .project-astitva .project-hero{
-  height:85vh;
+  height:88vh;
   overflow:hidden;
 }
 
@@ -886,46 +885,46 @@
 /* ---------------- INTRO ---------------- */
 
 .project-astitva .project-intro{
-  margin:120px auto;
+  margin:140px auto;
   display:flex;
   flex-direction:column;
   align-items:center;
-  gap:30px;
+  gap:32px;
 }
 
 .project-astitva .intro-left h1{
-  font-size:clamp(52px,6vw,80px);
+  font-size:clamp(56px,6vw,88px);
 }
 
 .project-astitva .project-tags{
   display:flex;
   flex-wrap:wrap;
   justify-content:center;
-  gap:10px;
+  gap:12px;
 }
 
 .project-astitva .project-tags span{
   font-size:13px;
-  padding:7px 16px;
-  border-radius:20px;
+  padding:8px 18px;
+  border-radius:22px;
   background:#eae4d9;
 }
 
 .project-astitva .intro-right p{
-  font-size:18px;
-  line-height:1.9;
-  max-width:720px;
+  font-size:19px;
+  line-height:2;
+  max-width:760px;
   margin:0 auto;
 }
 
 /* ---------------- GALLERY ---------------- */
 
 .project-astitva .project-gallery{
-  width:min(1000px, 92%);
-  margin:120px auto;
+  width:min(1250px, 95%);
+  margin:140px auto;
 
   display:grid;
-  gap:24px;
+  gap:30px;
 }
 
 .project-astitva .grid-style-2{
@@ -938,73 +937,77 @@
 
 .project-astitva .project-gallery img{
   width:100%;
-  height:260px;
+  height:420px; /* BIG but not overwhelming */
   object-fit:cover;
   display:block;
 
-  border-radius:14px;
-  box-shadow:0 10px 30px rgba(0,0,0,0.08);
+  border-radius:18px;
+  box-shadow:0 14px 36px rgba(0,0,0,0.08);
 }
 
 /* ---------------- FULL BLEED ---------------- */
 
+.project-astitva .project-image.full-bleed{
+  margin:160px auto;
+}
+
 .project-astitva .project-image.full-bleed img{
   width:100%;
-  max-width:1100px;
+  max-width:1350px; /* pushed but not edge-to-edge */
   margin:0 auto;
   display:block;
 
-  border-radius:16px;
-  box-shadow:0 12px 30px rgba(0,0,0,0.08);
+  border-radius:20px;
+  box-shadow:0 16px 40px rgba(0,0,0,0.08);
 }
 
 /* ---------------- IMAGE ---------------- */
 
 .project-astitva .project-image{
-  margin:120px auto;
+  margin:140px auto;
   display:flex;
   justify-content:center;
 }
 
 .project-astitva .project-image img{
-  width:min(900px, 92%);
+  width:min(1150px, 95%);
   display:block;
 
-  border-radius:16px;
-  box-shadow:0 12px 30px rgba(0,0,0,0.08);
+  border-radius:20px;
+  box-shadow:0 16px 40px rgba(0,0,0,0.08);
 }
 
 /* ---------------- TEXT ---------------- */
 
 .project-astitva .project-text{
-  margin:120px auto;
-  max-width:720px;
+  margin:140px auto;
+  max-width:760px;
   text-align:center;
 }
 
 .project-astitva .project-text h2{
-  font-size:34px;
-  margin-bottom:20px;
+  font-size:36px;
+  margin-bottom:24px;
 }
 
 .project-astitva .project-text p{
-  font-size:18px;
-  line-height:1.9;
+  font-size:19px;
+  line-height:2;
 }
 
-/* ---------------- NAV (GLOBAL STYLE) ---------------- */
+/* ---------------- NAV ---------------- */
 
 .project-navigation{
   width:100%;
-  padding:120px 0;
+  padding:140px 0;
   display:flex;
   justify-content:center;
   gap:40px;
 }
 
 .nav-project{
-  padding:12px 26px;
-  border-radius:30px;
+  padding:14px 30px;
+  border-radius:32px;
   background:#1a1a1a;
   color:#fff;
   text-decoration:none;
@@ -1023,9 +1026,8 @@
 }
 
 .nav-project h3{
-  font-size:15px;
+  font-size:16px;
 }
-
 
 /* ---------------- RESPONSIVE ---------------- */
 
@@ -1040,51 +1042,6 @@
     height:auto;
   }
 
-}
-
-
-/* ================= NAV BASE ================= */
-
-.project-navigation{
-  width:min(1000px, 90%);
-  margin:120px auto;
-  display:flex;
-  justify-content:center;
-  gap:40px;
-}
-
-/* NAV BUTTON */
-.nav-project{
-  background:#ffffff;
-  padding:22px 40px;
-  border-radius:60px;
-  text-decoration:none;
-  color:#111;
-
-  display:flex;
-  flex-direction:column;
-  gap:6px;
-
-  min-width:280px;
-
-  box-shadow:0 10px 30px rgba(0,0,0,0.08);
-  transition:0.3s ease;
-}
-
-.nav-project span{
-  font-size:13px;
-  opacity:0.6;
-}
-
-.nav-project h3{
-  font-size:18px;
-  font-weight:500;
-}
-
-/* HOVER */
-.nav-project:hover{
-  transform:translateY(-4px);
-  box-shadow:0 18px 50px rgba(0,0,0,0.12);
 }
 
 /* ================= DARK MODE FIX ================= */
